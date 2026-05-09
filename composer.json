@@ -1,0 +1,32 @@
+{
+    "name": "chuoke/laravel-user-identities",
+    "description": "Multi-auth identities for Laravel: decouple auth data from your users table.",
+    "type": "library",
+    "version": "0.0.1",
+    "keywords": [
+        "laravel",
+        "user-identities"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "laravel/framework": "^12|^13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chuoke\\UserIdentities\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Chuoke\\UserIdentities\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chuoke\\UserIdentities\\UserIdentitiesServiceProvider"
+            ]
+        }
+    }
+}
